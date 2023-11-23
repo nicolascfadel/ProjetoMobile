@@ -39,6 +39,35 @@ class _MyPageState extends State<MyPage> {
           )
         ],
       ),
+      body:  ListView(
+        children: [
+          Stack(
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.height - 82.0,
+                width: MediaQuery.of(context).size.width,
+                color: Colors.transparent,
+              ),
+              Positioned(
+                top: 75.0,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(45.0),
+                      topRight: Radius.circular(45.0),
+                      
+                    ),
+                    color: Colors.white
+                    
+                  ),
+                  height: MediaQuery.of(context).size.height - 100.0,
+                  width: MediaQuery.of(context).size.width,
+                ),
+              )
+            ]
+          )
+        ],
+      ),
     );
   }
 }
